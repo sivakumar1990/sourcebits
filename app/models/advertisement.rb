@@ -14,6 +14,7 @@ class Advertisement < ActiveRecord::Base
     max_price = price_array.max
     index_val = price_array.index(max_price)
     final_val = return_val[index_val]
+    return final_val, max_price
   end
 
   def self.evaluate_method(arr_hash)

@@ -64,7 +64,7 @@ class AdvertisementsController < ApplicationController
   # GET /lucrative_ads
   # GET /lucrative_ads.json
   def lucrative_ads
-    p @results = Advertisement.get_lucrative_ads_combination()
+    @results, @sum = Advertisement.get_lucrative_ads_combination()
   end
 
   private
